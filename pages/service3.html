@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <base href="/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service 3 - Japanify</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../js/pathUtils.js"></script>
+    <script src="../js/loadTemplates.js" defer></script>
+  </head>
+  <body>
+    <header id="header-template"></header>
+    <main onclick="closeMenu(event)">
+      <section class="content service-content">
+        <h2>Service 3</h2>
+        <p>ここに面白い仕掛けを入れる。</p>
+        <p>例えば、クリックでメッセージが変更されるボタン。</p>
+        <button onclick="changeMessage()">クリックしてメッセージを変更</button>
+        <p id="message">初期メッセージ</p>
+      </section>
+    </main>
+    <footer id="footer-template"></footer>
+    <script src="../js/scripts.js"></script>
+    <script>
+      function changeMessage() {
+        document.getElementById("message").innerText = "新しいメッセージ！";
+      }
+    </script>
+  </body>
+</html>

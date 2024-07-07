@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japanify</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../js/loadTemplates.js" defer></script>
+    <script src="../js/pathUtils.js" defer></script>
+  </head>
+  <body>
+    <header id="header-template"></header>
+
+    <main onclick="closeMenu(event)">
+      <!-- ヒーローセクション -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="title-JP">Japanify</h1>
+          <h2 class="title-overlay">
+            - Empowering Japan to Create a New Future -
+          </h2>
+          <button class="cta-button">Discover Our Services</button>
+        </div>
+        <div class="scroll-indicator">&#9660;</div>
+      </section>
+
+      <!-- About Us セクション -->
+      <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>
+          Japanify is dedicated to bringing the best of Japanese culture,
+          innovation, and excellence to the global stage. We blend tradition
+          with modernity to create unique experiences and solutions for our
+          clients worldwide.
+        </p>
+      </section>
+
+      <!-- Services セクション -->
+      <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+          <div class="service-item">
+            <h3>Cultural Consulting</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Technology Integration</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Design Solutions</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects セクション -->
+      <section id="projects" class="projects-section">
+        <h2>Featured Projects</h2>
+        <div class="project-slider">
+          <div class="project-item">
+            <img src="/api/placeholder/400/300" alt="Project 1" />
+            <p>Tokyo Tower Renovation</p>
+          </div>
+          <button class="slider-button prev" onclick="prevProject()">
+            &#10094;
+          </button>
+          <button class="slider-button next" onclick="nextProject()">
+            &#10095;
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer-template"></footer>
+
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>
