@@ -1,3 +1,4 @@
+// scripts.js
 // 既存の関数を維持
 function toggleMenu() {
   var menuContent = document.getElementById("menu-content");
