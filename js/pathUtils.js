@@ -1,7 +1,7 @@
 // pathUtils.js
 function getCorrectPath(path) {
   const currentPath = window.location.pathname;
-  const depth = currentPath.split("/").length - 2;
+  const depth = currentPath.split("/").length - 1; // 深さを調整
   return "../".repeat(depth) + path;
 }
 
