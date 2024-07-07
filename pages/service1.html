@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <base href="/" />
+    <base href="/my-website/" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Service 1 - Japanify</title>
+    <title>SNS - Japanify</title>
     <link rel="stylesheet" href="../css/styles.css" />
     <script src="../js/pathUtils.js"></script>
     <script src="../js/loadTemplates.js" defer></script>
@@ -13,10 +13,55 @@
     <header id="header-template"></header>
     <main onclick="closeMenu(event)">
       <section class="content">
-        <h2>Service 1</h2>
-        <p>ここに面白い仕掛けを入れる。</p>
-        <button onclick="changeContent()">クリックして内容を変える</button>
-        <p id="dynamic-content">ここが変わります。</p>
+        <h1>開発したSNSの紹介</h1>
+        <h2>目的</h2>
+        <p>
+          地域創成を通じて日本全国を元気にする。訪れた場所の思い出や地域の歴史、文化を後世に伝える。
+        </p>
+
+        <h2>機能</h2>
+        <ul>
+          <li>
+            <strong>位置情報の取得:</strong>
+            ユーザーが訪れた場所でアプリが自動的に位置情報を取得。
+          </li>
+          <li>
+            <strong>写真・動画のアップロード:</strong>
+            取得した位置情報と共に、短い動画や写真をアップロード可能。
+          </li>
+          <li>
+            <strong>閲覧機能:</strong>
+            ユーザーが特定の地域に訪れた際、その地域でアップロードされた他のユーザーの写真や動画を閲覧できる。
+          </li>
+          <li>
+            <strong>思い出の共有:</strong>
+            個人の思い出を共有することで、地域の魅力を伝える。
+          </li>
+          <li>
+            <strong>歴史・文化の保存:</strong>
+            地域の歴史や文化を動画や写真で後世に伝える。
+          </li>
+        </ul>
+
+        <h2>特徴</h2>
+        <ul>
+          <li>
+            <strong>位置情報に基づくコンテンツフィルタリング:</strong>
+            ユーザーが訪れた場所周辺のコンテンツのみを表示することで、地域の特性や魅力をリアルに感じられる。
+          </li>
+          <li>
+            <strong>個人の思い出と地域の魅力の両立:</strong>
+            観光地や地域イベントだけでなく、個人的な思い出も共有することで、地域の多様な魅力を伝える。
+          </li>
+          <li>
+            <strong>地域歴史・文化の保存:</strong>
+            地元の住民や観光客が投稿するコンテンツを通じて、地域の歴史や文化をデジタルアーカイブとして残すことができる。
+          </li>
+        </ul>
+
+        <p>
+          このサービスにより、訪れた場所の魅力をさらに引き出し、他の観光客や地元住民と共有することで、地域創生に貢献します。
+        </p>
       </section>
     </main>
     <footer id="footer-template"></footer>
