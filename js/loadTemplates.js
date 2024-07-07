@@ -4,8 +4,12 @@ async function loadTemplates() {
   const footerTemplate = document.getElementById("footer-template");
 
   try {
-    const headerResponse = await fetch(getCorrectPath("templates/header.html"));
-    const footerResponse = await fetch(getCorrectPath("templates/footer.html"));
+    const headerResponse = await fetch(
+      getCorrectPath("pages/templates/header.html")
+    );
+    const footerResponse = await fetch(
+      getCorrectPath("pages/templates/footer.html")
+    );
 
     if (headerResponse.ok && footerResponse.ok) {
       const headerContent = await headerResponse.text();

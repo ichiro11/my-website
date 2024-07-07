@@ -1,7 +1,8 @@
 // pathUtils.js
 function getCorrectPath(path) {
   const currentPath = window.location.pathname;
-  const depth = currentPath.split("/").length - 1; // 深さを調整
+  const isRoot = currentPath === "/" || currentPath === "/index.html"; // ルートパスかどうかを確認
+  const depth = isRoot ? 0 : currentPath.split("/").length - 3; // 深さを調整
   return "../".repeat(depth) + path;
 }
 
